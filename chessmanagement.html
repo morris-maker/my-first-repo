@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Tournament Manager</title>
+    <link rel="stylesheet" href="chess-style.css">
+</head>
+<body>
+
+    <h1>♟ Chess Tournament Manager</h1>
+    <p>Manage players, scores, and tournaments in real time</p>
+
+    <div>
+        <input id="playerName" placeholder="Enter player name">
+        <button onclick="addPlayer()">Add Player</button>
+    </div>
+
+    <h2>Players</h2>
+    <ul id="playerList"></ul>
+    <hr>
+
+<h2>Matches</h2>
+
+<h3>Current Round: <span id="roundNumber">1</span></h3>
+
+<button onclick="nextRound()">Next Round</button>
+<button onclick="generateSwissPairings()">Generate Swiss Pairings</button>
+
+<div>
+    <select id="playerA"></select>
+    <select id="playerB"></select>
+    <button onclick="addMatchResult()">Submit Result</button>
+</div>
+
+<ul id="matchList"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
